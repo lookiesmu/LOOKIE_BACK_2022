@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>jpabook.jpashop.domain.Member</OriginalElement>
+  <nodes>
+    <node x="470.5" y="832.0">jpabook.jpashop.domain.Category</node>
+    <node x="240.75" y="1457.0">jpabook.jpashop.domain.ClubQuestion.Modify</node>
+    <node x="520.75" y="1457.0">jpabook.jpashop.domain.ClubQuestion.Add</node>
+    <node x="212.0" y="544.0">jpabook.jpashop.domain.ClubApplicationList</node>
+    <node x="519.0" y="0.0">jpabook.jpashop.domain.MyApplicationList</node>
+    <node x="382.75" y="1457.0">jpabook.jpashop.domain.ClubQuestion.Delete</node>
+    <node x="345.5" y="185.0">jpabook.jpashop.domain.ApplyRole</node>
+    <node x="408.0" y="452.0">jpabook.jpashop.domain.Member</node>
+    <node x="342.0" y="1190.0">jpabook.jpashop.domain.ClubQuestion.ClubQuestion</node>
+    <node x="149.5" y="821.0">jpabook.jpashop.domain.MadeRole</node>
+    <node x="275.0" y="23.5">jpabook.jpashop.domain.QuestionAnswer</node>
+    <node x="0.0" y="567.5">jpabook.jpashop.domain.MadeClub</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="jpabook.jpashop.domain.Category" target="jpabook.jpashop.domain.ClubQuestion.ClubQuestion" relationship="TO_MANY">
+      <point x="-60.25" y="143.5" />
+      <point x="530.75" y="1160.0" />
+      <point x="295.0" y="1160.0" />
+      <point x="295.0" y="1170.0" />
+      <point x="390.0" y="1170.0" />
+      <point x="-48.0" y="-108.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.ClubQuestion.ClubQuestion" target="jpabook.jpashop.domain.Category" relationship="TO_MANY">
+      <point x="-48.0" y="-108.5" />
+      <point x="390.0" y="1170.0" />
+      <point x="295.0" y="1170.0" />
+      <point x="295.0" y="1160.0" />
+      <point x="530.75" y="1160.0" />
+      <point x="-60.25" y="143.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.ClubQuestion.ClubQuestion" target="jpabook.jpashop.domain.MadeRole" relationship="DEPENDENCY">
+      <point x="48.0" y="-108.5" />
+      <point x="486.0" y="1170.0" />
+      <point x="596.0" y="1170.0" />
+      <point x="596.0" y="1150.0" />
+      <point x="375.25" y="1150.0" />
+      <point x="75.25" y="154.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.MadeRole" target="jpabook.jpashop.domain.ClubQuestion.ClubQuestion" relationship="DEPENDENCY">
+      <point x="75.25" y="154.5" />
+      <point x="375.25" y="1150.0" />
+      <point x="596.0" y="1150.0" />
+      <point x="596.0" y="1170.0" />
+      <point x="486.0" y="1170.0" />
+      <point x="48.0" y="-108.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.ApplyRole" target="jpabook.jpashop.domain.MyApplicationList" relationship="TO_MANY">
+      <point x="-71.25" y="-108.5" />
+      <point x="416.75" y="165.0" />
+      <point x="382.0" y="165.0" />
+      <point x="382.0" y="155.0" />
+      <point x="561.0" y="155.0" />
+      <point x="-42.0" y="62.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.MyApplicationList" target="jpabook.jpashop.domain.ApplyRole" relationship="TO_ONE">
+      <point x="-42.0" y="62.5" />
+      <point x="561.0" y="155.0" />
+      <point x="382.0" y="155.0" />
+      <point x="382.0" y="165.0" />
+      <point x="416.75" y="165.0" />
+      <point x="-71.25" y="-108.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.ApplyRole" target="jpabook.jpashop.domain.MyApplicationList" relationship="DEPENDENCY">
+      <point x="71.25" y="-108.5" />
+      <point x="559.25" y="165.0" />
+      <point x="608.0" y="165.0" />
+      <point x="608.0" y="145.0" />
+      <point x="645.0" y="145.0" />
+      <point x="42.0" y="62.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.MyApplicationList" target="jpabook.jpashop.domain.ApplyRole" relationship="DEPENDENCY">
+      <point x="42.0" y="62.5" />
+      <point x="645.0" y="145.0" />
+      <point x="608.0" y="145.0" />
+      <point x="608.0" y="165.0" />
+      <point x="559.25" y="165.0" />
+      <point x="71.24999999999999" y="-108.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.ApplyRole" target="jpabook.jpashop.domain.Member" relationship="TO_ONE">
+      <point x="71.24999999999999" y="108.5" />
+      <point x="559.25" y="427.0" />
+      <point x="528.0" y="427.0" />
+      <point x="40.0" y="-154.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.ClubQuestion.ClubQuestion" target="jpabook.jpashop.domain.Category" relationship="DEPENDENCY">
+      <point x="48.0" y="-108.5" />
+      <point x="486.0" y="1170.0" />
+      <point x="596.0" y="1170.0" />
+      <point x="596.0" y="1150.0" />
+      <point x="651.25" y="1150.0" />
+      <point x="60.25" y="143.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.Member" target="jpabook.jpashop.domain.ApplyRole" relationship="TO_ONE">
+      <point x="40.0" y="-154.5" />
+      <point x="528.0" y="427.0" />
+      <point x="559.25" y="427.0" />
+      <point x="71.25" y="108.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.Category" target="jpabook.jpashop.domain.ClubQuestion.ClubQuestion" relationship="DEPENDENCY">
+      <point x="60.25" y="143.5" />
+      <point x="651.25" y="1150.0" />
+      <point x="596.0" y="1150.0" />
+      <point x="596.0" y="1170.0" />
+      <point x="486.0" y="1170.0" />
+      <point x="48.0" y="-108.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.MadeRole" target="jpabook.jpashop.domain.MadeClub" relationship="TO_ONE">
+      <point x="-75.25" y="-154.5" />
+      <point x="224.75" y="801.0" />
+      <point x="145.70000000000005" y="801.0" />
+      <point x="145.70000000000005" y="791.0" />
+      <point x="48.0" y="791.0" />
+      <point x="-48.0" y="39.0" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.Member" target="jpabook.jpashop.domain.ApplyRole" relationship="DEPENDENCY">
+      <point x="-40.0" y="-154.5" />
+      <point x="448.0" y="427.0" />
+      <point x="416.75" y="427.0" />
+      <point x="-71.25" y="108.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.ApplyRole" target="jpabook.jpashop.domain.Member" relationship="DEPENDENCY">
+      <point x="-71.25" y="108.5" />
+      <point x="416.75" y="427.0" />
+      <point x="448.0" y="427.0" />
+      <point x="-40.0" y="-154.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.ClubQuestion.Modify" target="jpabook.jpashop.domain.ClubQuestion.ClubQuestion" relationship="GENERALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="301.75" y="1432.0" />
+      <point x="438.0" y="1432.0" />
+      <point x="0.0" y="108.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.ClubApplicationList" target="jpabook.jpashop.domain.MadeRole" relationship="DEPENDENCY">
+      <point x="44.0" y="62.5" />
+      <point x="344.0" y="781.0" />
+      <point x="443.9625" y="781.0" />
+      <point x="443.9625" y="801.0" />
+      <point x="375.25" y="801.0" />
+      <point x="75.25" y="-154.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.MadeRole" target="jpabook.jpashop.domain.ClubApplicationList" relationship="DEPENDENCY">
+      <point x="75.25" y="-154.5" />
+      <point x="375.25" y="801.0" />
+      <point x="443.9625" y="801.0" />
+      <point x="443.9625" y="781.0" />
+      <point x="344.0" y="781.0" />
+      <point x="44.0" y="62.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.ApplyRole" target="jpabook.jpashop.domain.QuestionAnswer" relationship="TO_ONE">
+      <point x="-71.25" y="-108.5" />
+      <point x="416.75" y="165.0" />
+      <point x="382.0" y="165.0" />
+      <point x="382.0" y="155.0" />
+      <point x="331.0" y="155.0" />
+      <point x="-56.0" y="39.0" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.ClubQuestion.Add" target="jpabook.jpashop.domain.ClubQuestion.ClubQuestion" relationship="GENERALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="574.25" y="1432.0" />
+      <point x="438.0" y="1432.0" />
+      <point x="0.0" y="108.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.MadeRole" target="jpabook.jpashop.domain.MadeClub" relationship="DEPENDENCY">
+      <point x="75.25" y="-154.5" />
+      <point x="375.25" y="801.0" />
+      <point x="443.9625" y="801.0" />
+      <point x="443.9625" y="781.0" />
+      <point x="144.0" y="781.0" />
+      <point x="48.0" y="39.0" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.ClubQuestion.Delete" target="jpabook.jpashop.domain.ClubQuestion.ClubQuestion" relationship="GENERALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="441.75" y="1432.0" />
+      <point x="438.0" y="1432.0" />
+      <point x="0.0" y="108.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.MadeRole" target="jpabook.jpashop.domain.Member" relationship="DEPENDENCY">
+      <point x="75.25" y="-154.5" />
+      <point x="375.25" y="801.0" />
+      <point x="443.9625" y="801.0" />
+      <point x="443.9625" y="781.0" />
+      <point x="528.0" y="781.0" />
+      <point x="40.0" y="154.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.Member" target="jpabook.jpashop.domain.MadeRole" relationship="DEPENDENCY">
+      <point x="40.0" y="154.5" />
+      <point x="528.0" y="781.0" />
+      <point x="443.9625" y="781.0" />
+      <point x="443.9625" y="801.0" />
+      <point x="375.25" y="801.0" />
+      <point x="75.25" y="-154.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.MadeRole" target="jpabook.jpashop.domain.Member" relationship="TO_ONE">
+      <point x="-75.25" y="-154.5" />
+      <point x="224.75" y="801.0" />
+      <point x="145.70000000000005" y="801.0" />
+      <point x="145.70000000000005" y="791.0" />
+      <point x="448.0" y="791.0" />
+      <point x="-40.0" y="154.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.Member" target="jpabook.jpashop.domain.MadeRole" relationship="TO_ONE">
+      <point x="-40.0" y="154.5" />
+      <point x="448.0" y="791.0" />
+      <point x="145.70000000000005" y="791.0" />
+      <point x="145.70000000000005" y="801.0" />
+      <point x="224.75" y="801.0" />
+      <point x="-75.25" y="-154.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.ClubQuestion.ClubQuestion" target="jpabook.jpashop.domain.MadeRole" relationship="TO_ONE">
+      <point x="-48.0" y="-108.5" />
+      <point x="390.0" y="1170.0" />
+      <point x="295.0" y="1170.0" />
+      <point x="295.0" y="1160.0" />
+      <point x="224.75" y="1160.0" />
+      <point x="-75.25" y="154.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.ApplyRole" target="jpabook.jpashop.domain.QuestionAnswer" relationship="DEPENDENCY">
+      <point x="71.25" y="-108.5" />
+      <point x="559.25" y="165.0" />
+      <point x="608.0" y="165.0" />
+      <point x="608.0" y="145.0" />
+      <point x="443.0" y="145.0" />
+      <point x="56.0" y="39.0" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.ClubApplicationList" target="jpabook.jpashop.domain.MadeRole" relationship="TO_ONE">
+      <point x="-44.0" y="62.5" />
+      <point x="256.0" y="791.0" />
+      <point x="145.70000000000005" y="791.0" />
+      <point x="145.70000000000005" y="801.0" />
+      <point x="224.75" y="801.0" />
+      <point x="-75.25" y="-154.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.MadeRole" target="jpabook.jpashop.domain.ClubApplicationList" relationship="TO_MANY">
+      <point x="-75.25" y="-154.5" />
+      <point x="224.75" y="801.0" />
+      <point x="145.70000000000005" y="801.0" />
+      <point x="145.70000000000005" y="791.0" />
+      <point x="256.0" y="791.0" />
+      <point x="-44.0" y="62.5" />
+    </edge>
+    <edge source="jpabook.jpashop.domain.MadeRole" target="jpabook.jpashop.domain.ClubQuestion.ClubQuestion" relationship="TO_MANY">
+      <point x="-75.25" y="154.5" />
+      <point x="224.75" y="1160.0" />
+      <point x="295.0" y="1160.0" />
+      <point x="295.0" y="1170.0" />
+      <point x="390.0" y="1170.0" />
+      <point x="-48.0" y="-108.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5795629820051413" showDependencies="true" x="88.44763193918675" y="569.282767797738" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
