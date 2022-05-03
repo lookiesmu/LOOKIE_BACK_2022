@@ -37,7 +37,7 @@
 ```
 
 ##  <p align="center"> ⚙️ Entity Relationship Diagram ⚙️ </p>
-|Entity 설계|ERD|
+|ERD|Class Diagram|
 |:---:|:---:|
 |![image](https://user-images.githubusercontent.com/62318430/166396506-34bab732-c2f1-4472-ab9b-5d5527d7010a.png)|![image](https://user-images.githubusercontent.com/62318430/166396523-9c783590-1f98-441c-b838-68ac2f21170f.png)|
 ---
