@@ -1,4 +1,21 @@
-# 💻 SK LOOKIE 상명대학교 백엔드 과제 제출 저장소입니다 💻
+### LOOKIE_BACK_2022
+💻 SK LOOKIE 상명대학교 백엔드 과제 제출 저장소입니다 💻
+
+---
+<center>
+|주차|주제|자료|과제|
+|:---|:---:|:---:|:---:|
+|1주차|스프링의 기초|Spring기초 pdf|-| 
+|2주차|강의 소개 및 프로젝트 설정|강의 섹션0~1|프로젝트 초기 설정 후 Git에 올리기|
+|3주차|엔티티 설계 및 개발|강의 섹션2|ERD, 클래스 다이어그램 ,엔티티 개발| 
+|4주차|회원, 상품 Repository, Service 개발|강의 섹션3~4|-|
+|5주차|주문 Repository, Service개발|강의 섹션5|-|
+|6주차|Controller 구현 및 RestfulAPI 학습|블로그 게시물|-|
+|7주차|Test 코드 작성 학습|블로그 게시물|-|
+|8주차|Spring Security 학습|블로그 게시물|-|
+|9주차|애플리케이션 AWS 배포 하기|블로그 게시물|-|
+</center>
+---
 
 ### 🖥 제작할 프로젝트 🖥
 
@@ -18,17 +35,4 @@
 #### Entity Relationship Diagram
 ![image](https://user-images.githubusercontent.com/62318430/166396506-34bab732-c2f1-4472-ab9b-5d5527d7010a.png)
 ![image](https://user-images.githubusercontent.com/62318430/166396523-9c783590-1f98-441c-b838-68ac2f21170f.png)
-
-
-|주차|주제|자료|과제|
-|:---|:---:|:---:|:---:|
-|1주차|스프링의 기초|Spring기초 pdf|-| 
-|2주차|강의 소개 및 프로젝트 설정|강의 섹션0~1|프로젝트 초기 설정 후 Git에 올리기|
-|3주차|엔티티 설계 및 개발|강의 섹션2|ERD, 클래스 다이어그램 ,엔티티 개발| 
-|4주차|회원, 상품 Repository, Service 개발|강의 섹션3~4|-|
-|5주차|주문 Repository, Service개발|강의 섹션5|-|
-|6주차|Controller 구현 및 RestfulAPI 학습|블로그 게시물|-|
-|7주차|Test 코드 작성 학습|블로그 게시물|-|
-|8주차|Spring Security 학습|블로그 게시물|-|
-|9주차|애플리케이션 AWS 배포 하기|블로그 게시물|-|
-
+---
