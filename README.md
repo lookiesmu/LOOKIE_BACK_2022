@@ -36,7 +36,7 @@
 8.   동아리를 만든 멤버는 다른 동아리에 지원할 수 없다.
 ```
 
-##  <p align="center"> ⚙️ Entity Relationship Diagram ⚙️ </p>
+#  <p align="center"> ⚙️ Entity Relationship Diagram ⚙️ </p>
 |Entity 설계|ERD|
 |:---:|:---:|
 |![image](https://user-images.githubusercontent.com/62318430/166396506-34bab732-c2f1-4472-ab9b-5d5527d7010a.png)|![image](https://user-images.githubusercontent.com/62318430/166396523-9c783590-1f98-441c-b838-68ac2f21170f.png)|
