@@ -1,6 +1,6 @@
 # <p align="center">💻 SK LOOKIE 상명대학교 백엔드 과제 제출 저장소입니다 💻 </p>
 
-<p align="center">
+<div align="center">
   
 |주차|주제|자료|과제|
 |:---|:---:|:---:|:---:|
@@ -14,7 +14,7 @@
 |8주차|Spring Security 학습|블로그 게시물|-|
 |9주차|애플리케이션 AWS 배포 하기|블로그 게시물|-|
   
-</p>
+</ div>
 
 <br />
 
