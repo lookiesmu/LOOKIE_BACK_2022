@@ -1,7 +1,7 @@
 ### LOOKIE_BACK_2022
 💻 SK LOOKIE 상명대학교 백엔드 과제 제출 저장소입니다 💻
 
----
+***
 <center>
 |주차|주제|자료|과제|
 |:---|:---:|:---:|:---:|
@@ -15,9 +15,9 @@
 |8주차|Spring Security 학습|블로그 게시물|-|
 |9주차|애플리케이션 AWS 배포 하기|블로그 게시물|-|
 </center>
----
+***
 
-### 🖥 제작할 프로젝트 🖥
+# 🖥 제작할 프로젝트 🖥
 
 > 어떤 고객은 우리 상명대 루키 백엔드 부서원들의 능력을 알아보고 동아리 지원 플랫폼 제작 의뢰를 했다. 고객의 요구사항은 아래와 같다.
 
@@ -32,7 +32,7 @@
 8.   동아리를 만든 멤버는 다른 동아리에 지원할 수 없다.
 ```
 
-#### Entity Relationship Diagram
+## Entity Relationship Diagram
 ![image](https://user-images.githubusercontent.com/62318430/166396506-34bab732-c2f1-4472-ab9b-5d5527d7010a.png)
 ![image](https://user-images.githubusercontent.com/62318430/166396523-9c783590-1f98-441c-b838-68ac2f21170f.png)
 ---
