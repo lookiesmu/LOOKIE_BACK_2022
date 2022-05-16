@@ -7,7 +7,14 @@ public enum RequestStatus {
 
     private final String description;
 
-    RequestStatus(String description) {
+    RequestStatus(String description)
+    {
         this.description = description;
     }
+
+    public String description() {
+        return description;
+    }
+
+
 }
