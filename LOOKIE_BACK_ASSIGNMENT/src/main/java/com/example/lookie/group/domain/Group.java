@@ -1,6 +1,7 @@
 package com.example.lookie.group.domain;
 
 import com.example.lookie.grouprequest.domain.GroupRequest;
+import com.example.lookie.member.domain.Member;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -45,9 +46,11 @@ public class Group {
         this.questionList.add(question);
     }
 
+    @PersistenceContext
+    private EntityManager em;
 
     //생성 메서드
-    private static Group createGroup(String name, String description, String ownerEmail) {
+    public static Group createGroup(String name, String description, String ownerEmail) {
         Group group = new Group();
         group.name = name;
         group.description = description;
@@ -56,5 +59,9 @@ public class Group {
     }
     public void changeGroupName (String name){
         this.name = name;
+    }
+
+    public void changeGroupDescription (String description){
+        this.description = description;
     }
 }

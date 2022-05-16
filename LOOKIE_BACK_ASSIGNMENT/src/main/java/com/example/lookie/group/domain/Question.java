@@ -46,7 +46,8 @@ public class Question {
         return question;
     }
 
-    public void alterTitle (String title){
+    public void changeTitle (String title){
         this.title = title;
     }
+
 }

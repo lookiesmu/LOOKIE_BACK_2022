@@ -1,12 +1,14 @@
 package com.example.lookie.grouprequest.domain;
-
-
 import com.example.lookie.group.domain.Group;
 import com.example.lookie.group.domain.QuestionAnswer;
+import com.example.lookie.group.domain.repository.GroupRepository;
 import com.example.lookie.member.domain.Member;
+import com.example.lookie.member.repository.MemberRepository;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.transaction.annotation.Transactional;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +17,7 @@ import java.util.List;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 public class GroupRequest {
+
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "group_request_id")
@@ -40,6 +43,8 @@ public class GroupRequest {
     private List<QuestionAnswer> questionAnswerList = new ArrayList<>();
 
 
+
+
     // 연관관계 메서드
     public void setGroup(Group group){
         this.group=group;
@@ -50,6 +55,7 @@ public class GroupRequest {
         this.member=member;
         member.addGroupRequest(this);
     }
+
     public void addQuestionAnswer(QuestionAnswer questionAnswer){
         this.questionAnswerList.add(questionAnswer);
         questionAnswer.setGroupRequest(this);
@@ -69,9 +75,9 @@ public class GroupRequest {
         return groupRequest;
     }
 
-
     // 비즈니스 로직
     public void changeRequestStatus(RequestStatus requestStatus){
         this.requestStatus=requestStatus;
     }
+
 }
