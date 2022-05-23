@@ -3,6 +3,7 @@ package com.example.lookie.member.domain;
 
 import com.example.lookie.grouprequest.domain.GroupRequest;
 import lombok.AccessLevel;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -12,7 +13,7 @@ import java.util.List;
 
 @Entity
 @Getter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+//@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Member {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -49,7 +50,6 @@ public class Member {
 
 
 
-
     // 연관관계 메서드
     public void addGroupRequest(GroupRequest groupRequest){
         this.groupRequestList.add(groupRequest);
@@ -57,6 +57,7 @@ public class Member {
 
 
     // User 를 생성하는 메서드
+    @Builder
     public static Member createUserMember(String email, String password, String name, Address address){
         Member member = new Member();
         member.name=name;
@@ -69,6 +70,7 @@ public class Member {
 
 
     // 동아리 관리자를 생성하는 메서드
+    @Builder
     public static Member createAdminMember(String email, String password, String name, Address address){
         Member member = new Member();
         member.name=name;

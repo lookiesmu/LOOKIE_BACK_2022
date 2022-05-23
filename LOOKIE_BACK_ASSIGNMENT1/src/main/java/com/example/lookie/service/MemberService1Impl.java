@@ -21,7 +21,11 @@ public class MemberService1Impl implements MemberService1{
         memberRepository.findByEmail(email).ifPresent(a -> {
             throw new IllegalArgumentException("이메일이 중복됩니다.");
         }); //중복 회원 검증
-        Member user = Member.createUserMember(email, password, name, address);
+        Member user = Member.builder()
+                .email(email)
+                .password(password)
+                .name(name)
+                .address(address).build();
 
         return memberRepository.save(user).getId();
     }
@@ -31,7 +35,11 @@ public class MemberService1Impl implements MemberService1{
         memberRepository.findByEmail(email).ifPresent(a -> {
             throw new IllegalArgumentException("이메일이 중복됩니다.");
         });
-        Member Admin = Member.createUserMember(email, password, name, address);
+        Member Admin = Member.builder()
+                .email(email)
+                .password(password)
+                .name(name)
+                .address(address).build();
 
         return memberRepository.save(Admin).getId();
     }
