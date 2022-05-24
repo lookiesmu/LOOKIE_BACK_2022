@@ -2,7 +2,6 @@ package com.example.lookie.group.domain.questionanswer.service;
 
 import com.example.lookie.group.domain.Question;
 import com.example.lookie.group.domain.QuestionAnswer;
-import com.example.lookie.group.domain.questionanswer.repository.QuestionAnswerRepository;
 import com.example.lookie.group.domain.repository.QuestionRepository;
 import com.example.lookie.grouprequest.domain.GroupRequest;
 import com.example.lookie.grouprequest.repository.GroupRequestRepository;
@@ -16,7 +15,7 @@ import java.util.List;
 @Service
 @Transactional(readOnly = true)
 @RequiredArgsConstructor
-public class QuestionAnswerImpl implements QuestionAnswerService {
+public class QuestionAnswerServiceImpl implements QuestionAnswerService {
 
     private final QuestionRepository questionRepository;
     private final MemberRepository memberRepository;
